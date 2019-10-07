@@ -1,0 +1,32 @@
+
+.carousel {
+  border-radius: 50px;
+  overflow: hidden;
+
+  &__items {
+    min-width: calc(100% - 152px);
+  }
+
+  &__action {
+    width: 76px;
+    color: $color-light;
+    background: $color-green;
+
+    &--label {
+      font-size: 24px;
+    }
+  }
+
+  &__label {
+    color: $color-light;
+    font-size: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin: 8px auto;
+  }
+
+  &__item.is-active {
+    opacity: 1;
+    z-index: 1;
+  }
+}

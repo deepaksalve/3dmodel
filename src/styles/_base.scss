@@ -1,0 +1,40 @@
+body {
+  @extend .w--f;
+  @extend .h--f;
+  @extend .fs--1;
+
+  overflow: hidden;
+  background: $color-bg-gradient;
+  background-color: $color-light;
+  font-family: $default-font-family;
+}
+
+header {
+  @extend .w--f;
+  @extend .ta--c;
+
+  height: 84px;
+  font-size: 48px;
+  line-height: 84px;
+  color: $color-light;
+  border-bottom: 1px solid $color-blue-light;
+}
+
+.main-container {
+  width: 90%;
+  height: 80%;
+  min-height: 536px;
+  cursor: pointer;
+  margin: 24px auto 0;
+}
+
+.text-3d {
+  @extend .d--ib;
+  @extend .pos--r;
+
+  top: -8px;
+  left: -8px;
+  font-family: $font-warnes;
+  transition: all 0.2s ease-in-out;
+  text-shadow: 1px 1px $color-blue, 3px 3px $color-blue, 5px 5px $color-blue, 7px 7px $color-blue, 9px 9px $color-blue, 10px 10px $color-blue, 11px 11px 5px rgba(0,0,0,0.5);
+}

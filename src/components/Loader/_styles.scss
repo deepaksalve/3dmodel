@@ -1,0 +1,50 @@
+.loader {
+  @extend .pos--a;
+  @extend .d--t;
+  @extend .h--f;
+  @extend .w--f;
+  @extend .bg--tr;
+  @extend .top--0;
+  @extend .left--0;
+
+  z-index: 100;
+}
+
+.loader-dot {
+  @extend .w--1;
+  @extend .h--1;
+  @extend .d--ib;
+
+  margin: 0 4px;
+  border-radius: 100%;
+  animation-fill-mode: both;
+  background-color:$color-grey;
+  animation: loader-frame 0.7s 0s infinite linear;
+}
+
+@keyframes loader-frame {
+  0% {
+    transform: scale(1);
+    opacity: 0.01;
+  }
+
+  25% {
+    transform: scale(0.25);
+    opacity: 0.25;
+  }
+
+  50% {
+    transform: scale(0.5);
+    opacity: 0.50;
+  }
+
+  75% {
+    transform: scale(0.75);
+    opacity: 0.75;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
